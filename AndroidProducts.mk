@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_Infinix-X6726B.mk
+    $(LOCAL_DIR)/fox_Infinix_X6726B.mk
 
 COMMON_LUNCH_CHOICES := \
     fox_Infinix-X6726B-user \
