@@ -1,25 +1,26 @@
-#
-# Copyright (C) 2026 The Android Open Source Project
-# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
+# Inherit from the generic OrangeFox configuration
+$(call inherit-product, vendor/otrp/config/twrp.mk)
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Include boot control configurations for Virtual A/B slots
+$(call inherit-product, vendor/otrp/config/boot_control.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/fox/config/common.mk)
-
-# Inherit from Infinix-X6726B device
+# Inherit from Infinix-X6726B device configurations
 $(call inherit-product, device/infinix/Infinix-X6726B/device.mk)
 
+# Device Identity
 PRODUCT_DEVICE := Infinix-X6726B
 PRODUCT_NAME := fox_Infinix-X6726B
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix X6726B
+PRODUCT_MODEL := Infinix Hot 60 5G
 PRODUCT_MANUFACTURER := infinix
+
+# Force Vendor Boot Output (Required for Hot 60 5G)
+PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
+BOARD_USES_RECOVERY_AS_BOOT := false
+
+# OrangeFox Branding Specs
+FOX_BUILD_TYPE := Unofficial
+FOX_VERSION := R11.1
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 
