@@ -5,11 +5,11 @@ $(call inherit-product, vendor/otrp/config/twrp.mk)
 $(call inherit-product, vendor/otrp/config/boot_control.mk)
 
 # Inherit from Infinix-X6726B device configurations
-$(call inherit-product, device/infinix/Infinix-X6726B/device.mk)
+$(call inherit-product, device/infinix/Infinix_X6726B/device.mk)
 
 # Device Identity
-PRODUCT_DEVICE := Infinix-X6726B
-PRODUCT_NAME := fox_Infinix-X6726B
+PRODUCT_DEVICE := Infinix_X6726B
+PRODUCT_NAME := fox_Infinix_X6726B
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 60 5G
 PRODUCT_MANUFACTURER := infinix
