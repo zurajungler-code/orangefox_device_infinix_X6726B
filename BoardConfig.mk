@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X6726B
+DEVICE_PATH := device/infinix/Infinix_X6726B
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -43,7 +43,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6726B
+TARGET_BOOTLOADER_BOARD_NAME := Infinix_X6726B
 TARGET_NO_BOOTLOADER := true
 
 # Display
